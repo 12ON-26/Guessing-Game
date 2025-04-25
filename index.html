@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .win {
+      color: green;
+    }
+    .lose {
+      color: red;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Rolan Cea Pasturan BSIT 2B</h2>
+  <h1>Word Guessing Game</h1>
+  <h3>(apple, banana, grape, orange, peach, mango, kiwi)</h3>
+  <p>Enter your guess below. You have 5 attempts.</p>
+  <input type="text" id="guessInput" placeholder="Enter your guess" />
+  <button onclick="submitGuess()">Submit Guess</button>
+  <p id="message"></p>
+  <button onclick="restartGame()" style="display:none;" id="restartBtn">Play Again</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
